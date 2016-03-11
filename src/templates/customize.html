@@ -23,17 +23,14 @@
   <%= analytics %>
   <script>
     $(document).ready(function () {
-      console.log('hi')
       $('#customize').on('click', function () {
-        console.log('yo')
         var css = ''
         $('input:checked').each(function () {
-          var css += $(this).closest('[data-css]').data('css')
+          css += $(this).closest('[data-css]').data('css')
         })
         console.log(css)
       })
     })
+  </script>
 </body>
 </html>
-
-

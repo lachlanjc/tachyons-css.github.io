@@ -40,5 +40,6 @@ module.exports = function () {
 
     mkdirp.sync('customize')
     fs.writeFileSync('customize/index.html', compiledPage)
+    console.log('customize page build done')
   })
 }
